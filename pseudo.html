@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        h1:hover{
+            color: blueviolet;
+            background-color: brown;
+
+        }
+        #input-type:focus{
+            color: cornflowerblue;
+            background-color: chartreuse;
+
+        }
+
+        a:visited{
+            color: darkred;
+        }
+        h1::before{
+            content: 'Bangladesh ';
+        }
+        h3::after{
+            content: ' tumar batas ';
+        }
+        li:first-child{
+            color: brown;
+        }
+        li:last-child{
+            color: aqua;
+        }
+        /* identify event number */
+        li:nth-child(2n){
+            color: darkgreen;
+        }
+        /* odd number */
+        li:nth-child(2n+1){
+            color: lime;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- pseudo -->
+    <h1>amar sonar bangla</h1>
+    <h2>ami tumay valobasi</h2>
+    <h3>cirodin tumar akash</h3>
+    <input id="input-type" type="text">
+    <br>
+    <br>
+
+    <a href="https://www.facebook.com/">google</a>
+    <a href="https://www.youtube.com/">youtube</a>
+    <a href="https://www.wikipedia.org/">not visited</a>
+    <!-- another class -->
+    <ul>
+        <li>alia</li>
+        <li>maliha</li>
+        <li>daliya</li>
+        <li>maliya</li>
+        <li>alia</li>
+        <li>maliha</li>
+        <li>daliya</li>
+        <li>maliya</li>
+    </ul>
+
+</body>
+</html>
